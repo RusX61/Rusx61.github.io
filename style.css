@@ -1,168 +1,143 @@
-body {
-    margin: 10px;
-    background-image: url(img/bg1.jpg);
-    background-repeat:repeat-x;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #000000;
-}
-main{
-  padding-left: 40px;
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
 }
 
 header{
-  background-image: url(img/header_background.jpg);
-  background-size:contain;
-  color: #ffffff;
-  background-position: center;
-  border-radius: 10px;  
+  background-image: url(img/cracked-wall.png);
 }
 
-h1 {
-  position: center;
-  transform: translate(-3%, 0);
-  margin: 0 auto 1px;
-  text-shadow: 1px 1px 1px #000;
-  font-family: "Georgia", serif;
+h1{
   text-align: center;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 64px;
+  color: rgb(32, 32, 32);
+  outline: #20373a;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
-nav {
-  padding-left: 40px;
-  margin-left: auto;
-  margin-right: auto;
+#h1Back{
+  border: #b6b6b6;
+  background-color: #08080880;
+  border-radius: 15px;
+  padding: 8px;
 }
 
-nav a{
-  float: center;
-  line-height: 50px;
-  font-size: 15px;
-  background: rgb(150, 214, 240);
-  color: rgb(0, 0, 0);
-  margin-top: 50px;
-  margin-right: 57px;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center; 
-} 
-
-h2 {
-  margin: 0 auto 1px;
-  font-family: "Georgia", serif;
+h3{
   text-align: center;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 64px;
-  position: center;
-  transform: translate(-6%, 0);
 }
 
-h3 {
-  margin: 0 auto 1px;
-  font-family: "Georgia", serif;
-  text-align: center;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 64px;
-  position: center;
-  transform: translate(20%, 0);
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
+.tablink:hover {
+  background-color: #777;
 }
 
-.calculate {
-  font-size: 30px;
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(255, 255, 255);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#hight, #old, #index {
+  background-image: url(img/solid-concrete-wall-textured-backdrop.jpg);
+  background-size: cover;
+}
+
+#index {
+  line-height: 120%;
 }
 
 .inputform{
-  display: inline-block;
-  line-height: 30px;
-  font-size: 18px;
-  background: rgb(150, 214, 240);
-  color: rgb(0, 0, 0);
-  margin-top: 50px;
-  margin-right: 50px;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center; 
-}
-
-#submitButton {
-  position: relative;
-  left: 37%;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #1ea6f4;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
+  display: flex;
+  justify-content: center;  
   padding: 15px;
-  width: 150px;
-  margin: 5px;
-}
-  
-#height img{
-  float: right;
-  width:480px; 
-  height:350px;
-  border:3px solid #CCC;
-}
-  
-#old img{
-  float: right;
-  margin: 7px 7px 7px 0;
-  width:40%;
-  border:3px solid #CCC;
+  margin: 15px;
+  color: #fff;
+  border: 1px;
+  border-radius: 10px;
+  border-color: rgb(126, 122, 122);
+  background-color: #333333;
 }
 
-#old p{
-width: 50%;
+#calculate{
+  display: flex;
+  justify-content:center;
+  
 }
 
-#sign{
+#submitButton{
+  padding: 9px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 42%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #20373a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+#submitButton:hover {background-color: #0c9494}
+
+#submitButton:active {
+  background-color: #613197;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#fit, #table, #imtable{
   float: right;
+  margin: 10px;
+  width: 40%;
+  border: #fff;
+  border-radius: 3%;
+}
+
+#table{
+  width: 43%;
 }
 
 #imtable{
-  float: right;
-  margin: 7px 7px 7px 0;
-  width:40%;
-  border:3px solid #CCC;
+  width: 40%;
 }
-/* footer{
- 
 
-} */
+#imtableBig{
+  border-radius: 2%;
+  display: block;
+  margin: 0 auto;  
+}
+.example{
+color: #b2cf2e;
+}
+
+i{
+  color: #ec6543;
+}
 
 footer{
-  background-color: #616161;
-  background-position: center;
-  border-radius: 10px; 
-}
-
-footer p{
-  text-align: right;
-  padding-right: 10px;
-  color: #FFFFFF;
-}
-
-#up{
-  position: relative;
-  left: 45%;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #003d61;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px;
-  width: 80px;
-  margin: 5px;
+background-color: #333333;
+margin: 0px;
 }
