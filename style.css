@@ -1,0 +1,144 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+header{
+  background-image: url(img/cracked-wall.png);
+}
+
+h1{
+  text-align: center;
+  color: rgb(32, 32, 32);
+  outline: #20373a;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#h1Back{
+  border: #b6b6b6;
+  background-color: #08080880;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+h3{
+  text-align: center;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(255, 255, 255);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#hight, #old, #index {
+  background-image: url(img/solid-concrete-wall-textured-backdrop.jpg);
+  background-size: contain;
+  height: 100%;
+}
+
+#index {
+  line-height: 120%;
+}
+
+.inputform{
+  display: flex;
+  justify-content: center;  
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  border: 1px;
+  border-radius: 10px;
+  border-color: rgb(126, 122, 122);
+  background-color: #333333;
+}
+
+#calculate{
+  display: flex;
+  justify-content:center;
+  
+}
+
+#submitButton{
+  padding: 9px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 42%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #20373a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+#submitButton:hover {background-color: #0c9494}
+
+#submitButton:active {
+  background-color: #613197;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#fit, #table, #imtable{
+  float: right;
+  margin: 10px;
+  width: 40%;
+  border: #fff;
+  border-radius: 3%;
+}
+
+#table{
+  width: 43%;
+}
+
+#imtable{
+  width: 40%;
+}
+
+#imtableBig{
+  border-radius: 2%;
+  display: block;
+  margin: 0 auto;  
+}
+.example{
+color: #b2cf2e;
+}
+
+i{
+  color: #ec6543;
+}
+
+footer{
+background-color: #333333;
+margin: 0px;
+}
