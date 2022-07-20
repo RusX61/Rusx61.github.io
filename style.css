@@ -54,13 +54,9 @@ h3{
   color: rgb(255, 255, 255);
   display: none;
   padding: 100px 20px;
-  height: 100%;
-}
-
-#hight, #old, #index {
+  height: 100vh;
   background-image: url(img/solid-concrete-wall-textured-backdrop.jpg);
-  background-size: contain;
-  height: 100%;
+  background-size:cover;
 }
 
 #index {
