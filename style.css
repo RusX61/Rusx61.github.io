@@ -123,9 +123,39 @@ h3{
 
 #imtableBig{
   border-radius: 2%;
-  display: block;
-  margin: 0 auto;  
+  width: 45%;
+  display:block;
+  margin: auto;
+  opacity: 1;
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 550ms;
+  transform: scale(1,1);
+  transition-timing-function: ease-out;
+  transition-duration: 550ms;
+  transform: scale(1,1);
+  transition-timing-function: ease-out;
+  transition-duration: 550ms;
 }
+
+#imtableBig:hover{
+  transform: scale(1.6,1.6);
+    transition-timing-function: ease-out;
+    transition-duration: 550ms;
+    transform: scale(1.6,1.6);
+    transition-timing-function: ease-out;
+    transition-duration: 550ms;
+    -webkit-transform: scale(1.6,1.6);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.6,1.6);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+}
+
 .example{
 color: #b2cf2e;
 }
