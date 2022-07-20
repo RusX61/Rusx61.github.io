@@ -59,7 +59,7 @@ h3{
 
 #hight, #old, #index {
   background-image: url(img/solid-concrete-wall-textured-backdrop.jpg);
-  background-size: auto;
+  background-size: 100% auto;
 }
 
 #index {
