@@ -1,170 +1,83 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial;
+#square {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: black;
+  margin: 50px;
 }
 
-header{
-  background-image: url(img/cracked-wall.png);
+#rectangle {
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  background: rgb(226, 15, 15);
+  margin: 50px;
 }
 
-h1{
-  text-align: center;
-  color: rgb(32, 32, 32);
-  outline: #20373a;
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
+#circle {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: rgb(16, 235, 224);
+  border-radius: 50%;
+  margin: 50px;
 }
 
-#h1Back{
-  border: #b6b6b6;
-  background-color: #08080880;
-  border-radius: 15px;
-  padding: 8px;
+#i {
+  display: inline-block;
+  color:rgb(109, 2, 73);
+  font-weight: 900;
+  font-size:30px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-h3{
-  text-align: center;
+#learn {
+  display: inline-block;
+  color:rgb(10, 5, 77);
+  font-weight: 600;
+  font-size:50px;
+  font-style: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:15px;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 33.33%;
+#css {
+  display: inline-block;
+  color:rgb(0, 174, 255);
+  font-weight: 900;
+  font-size: 70px;
+  font-style: normal;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left:20px;
 }
 
-.tablink:hover {
-  background-color: #777;
+#in {
+  display: inline-block;
+  color:rgb(0, 255, 106);
+  font-weight: 900;
+  font-size: 90px;
+  font-style: normal;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left:20px;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: rgb(255, 255, 255);
-  display: none;
-  padding: 100px 20px;
-  height: 100vh;
-  background-image: url(img/solid-concrete-wall-textured-backdrop.jpg);
-  background-size:cover;
+#one {
+  display: inline-block;
+  color:rgb(255, 115, 0);
+  font-weight: 900;
+  font-size: 120px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif ;
+  margin-left:15px;
 }
 
-#index {
-  line-height: 120%;
-}
-
-.inputform{
-  display: flex;
-  justify-content: center;  
-  padding: 15px;
-  margin: 15px;
-  color: #fff;
-  border: 1px;
-  border-radius: 10px;
-  border-color: rgb(126, 122, 122);
-  background-color: #333333;
-}
-
-#calculate{
-  display: flex;
-  justify-content:center;
-  
-}
-
-#submitButton{
-  padding: 9px 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 42%;
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #20373a;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 2px #999;
-}
-
-#submitButton:hover {background-color: #0c9494}
-
-#submitButton:active {
-  background-color: #613197;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-#fit, #table, #imtable{
-  float: right;
-  margin: 10px;
-  width: 40%;
-  border: #fff;
-  border-radius: 3%;
-}
-
-#table{
-  width: 43%;
-}
-
-#imtable{
-  width: 40%;
-}
-
-#imtableBig{
-  border-radius: 2%;
-  width: 45%;
-  display:block;
-  margin: auto;
-  opacity: 1;
-  -webkit-transform: scale(1,1);
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 550ms;
-  -moz-transform: scale(1,1);
-  -moz-transition-timing-function: ease-out;
-  -moz-transition-duration: 550ms;
-  transform: scale(1,1);
-  transition-timing-function: ease-out;
-  transition-duration: 550ms;
-  transform: scale(1,1);
-  transition-timing-function: ease-out;
-  transition-duration: 550ms;
-}
-
-#imtableBig:hover{
-  transform: scale(1.6,1.6);
-    transition-timing-function: ease-out;
-    transition-duration: 550ms;
-    transform: scale(1.6,1.6);
-    transition-timing-function: ease-out;
-    transition-duration: 550ms;
-    -webkit-transform: scale(1.6,1.6);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 550ms;
-    -moz-transform: scale(1.6,1.6);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 550ms;
-}
-
-.example{
-color: #b2cf2e;
-}
-
-i{
-  color: #ec6543;
-}
-
-footer{
-background-color: #333333;
-margin: 0px;
+#hour {
+  display: inline-block;
+  color:rgba(0, 255, 0, 0.651);
+  font-weight: 900;
+  font-size: 100px;
+  font-style: normal;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serifHelvetica, sans-serif ;
+  margin-left:15px;
 }
