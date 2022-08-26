@@ -1,38 +1,30 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
+
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial;
+  font-family: "Roboto";
 }
 
 header{
-  background-image: url(img/cracked-wall.png);
+  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
 }
 
 h1{
   text-align: center;
-  color: rgb(32, 32, 32);
-  outline: #20373a;
+  color:#64a4d8;
+  font-family: "RobotoBold";
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-}
-
-#h1Back{
-  border: #b6b6b6;
-  background-color: #08080880;
-  border-radius: 15px;
-  padding: 8px;
+  -webkit-text-stroke-color: rgb(71, 71, 71);
 }
 
 h3{
   text-align: center;
 }
 
-/* Style tab links */
 .tablink {
   background-color: #555;
   color: white;
@@ -49,17 +41,16 @@ h3{
   background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: rgb(255, 255, 255);
+  color: rgb(63, 63, 63);
   display: none;
   padding: 100px 20px;
   height: 100vh;
-  background-image: url(img/solid-concrete-wall-textured-backdrop.jpg);
+  background: linear-gradient(90deg, #b1e7fe,#99e0fe,#b1e7fe);
   background-size:cover;
 }
 
-#index {
+.index {
   line-height: 120%;
 }
 
@@ -75,13 +66,14 @@ h3{
   background-color: #333333;
 }
 
-#calculate{
+.calculate{
   display: flex;
   justify-content:center;
   
 }
 
 #submitButton{
+  vertical-align:middle;
   padding: 9px 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -157,7 +149,7 @@ h3{
 }
 
 .example{
-color: #b2cf2e;
+color: #00bb10;
 }
 
 i{

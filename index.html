@@ -4,40 +4,49 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="src/styles/style.css">
+      <link rel="stylesheet" href="src/fonts/fonts.css">
       <title>Расчет веса</title>
   </head>
 
   <body>
     <header>
-        <h1><span id="h1Back">Калькулятор расчета идеального веса</span></h1></hr>
-
-        <div id="calculate" >
-
-        <span class="inputform";>Вес:<input type="number" id="userWeight" value="" placeholder="КГ"></span>
-
-        <span class="inputform";>Рост:<input type="number" id="userHeight" value="" placeholder="CМ"></span>
-
-        <span class="inputform";>Возраст:<input type="number" id="userAge" value="" placeholder="ЛEТ"></span>
-
-        <span class="inputform">Укажите пол:   <input type="radio" id="gender0" name="gender" value="male"> Мужской
-            <input type="radio" id="gender1" name="gender" value="female"> Женский
+      <div class="h1Back"><h1 class="h1Back">Калькулятор расчета идеального веса</h1></div>
+      <div class="calculate" >
+        <span class="inputform";>
+          Вес:<input type="number" id="userWeight" value="" placeholder="КГ">
+        </span>
+        <span class="inputform";>
+          Рост:<input type="number" id="userHeight" value="" placeholder="CМ">
+        </span>
+        <span class="inputform";>
+          Возраст:<input type="number" id="userAge" value="" placeholder="ЛEТ">
+        </span>
+        <span class="inputform">Укажите пол:   
+          <input type="radio" id="gender0" name="gender" value="male"> Мужской
+          <input type="radio" id="gender1" name="gender" value="female"> Женский
         <span>
+          
       </div>
-        <button type="submit" formmethod="get" formaction="index.html" style="vertical-align:middle"
-          id="submitButton">Рассчитать
+
+      <div class="submitButton">
+        <button type="submit" formmethod="get" formaction="index.html" 
+           id="submitButton">Рассчитать
         </button>
+        <a class="open_modal" href="#submitButton"></a>
+      </div>
+
+      
     </header>
 
     <main>
-      
-      <button class="tablink" onclick="openPage('hight', this, '#8d0505')" id="defaultOpen">Рассчитать вес по росту</button>
-      <button class="tablink" onclick="openPage('old', this, 'green')">Рассчитать вес по возрасту и росту</button>
-      <button class="tablink" onclick="openPage('index', this, '#670da3')">Рассчитать вес по ИМТ (индекс массы тела Кетле)</button>
+      <button class="tablink" onclick="openPage('hight', this, '#333333')" id="defaultOpen">Рассчитать вес по росту</button>
+      <button class="tablink" onclick="openPage('old', this, '#333333')">Рассчитать вес по возрасту и росту</button>
+      <button class="tablink" onclick="openPage('index', this, '#333333')">Рассчитать вес по ИМТ (индекс массы тела Кетле)</button>
 
       <div id="hight" class="tabcontent">
 
-        <img src="img/image_cm.jpg" alt="Иллюстрация" id="fit">
+        <img src="src/img/image_cm.jpg" alt="Иллюстрация" id="fit">
 
         <p>Простой способ известный больше как формула Брокка.</p>
 
@@ -65,7 +74,7 @@
           
       <div id="old" class="tabcontent">
 
-        <img src="img/table_2.jpg" 
+        <img src="src/img/table_2.jpg" 
             alt="Tаблица расчета оптимального веса по параметрам рост, возраст" 
             title="Tаблица расчета оптимального веса по параметрам рост, возраст" id="table"/> 
            
@@ -92,7 +101,7 @@
       
       <div id="index" class="tabcontent">
 
-        <img src="img/table_1.png"
+        <img src="src/img/table_1.png"
           alt="Таблица ИМТ" title="Таблица ИМТ" id="imtable">
         
         <p>При помощи Индекса Массы Тела можно узнать,
@@ -113,7 +122,7 @@
           и возрастные изменения организма.</p>
                   
         <h3>Tаблица расчета оптимального веса по индексу массы тела Кетле</h3>
-          <img src="img/body-mass-index_table-1200x652.jpg" 
+          <img src="src/img/body-mass-index_table-1200x652.jpg" 
         alt="Tаблица расчета оптимального веса по индексу массы тела Кетле" 
         title="Tаблица расчета оптимального веса по индексу массы тела Кетле" id="imtableBig">
       </div>
@@ -121,7 +130,7 @@
       </main>
 <footer>
       <span>Ruslan Merzlyakov 2022</span>
-  <script src="./index.js"></script>
+  <script src="./src/js/index.js"></script>
 </footer>
 </body>
 
